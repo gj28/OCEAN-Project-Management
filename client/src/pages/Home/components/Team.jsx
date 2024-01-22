@@ -54,7 +54,7 @@ const TeamContainer = styled.div`
 
 const Team = () => {
   const member = [{
-    photo: "https://drive.google.com/uc?id=1hwxI5wMMQyib0CEBZF_xyNTsjxLFZX96 ",
+    photo: "https://drive.google.com/uc?id=1hwxI5wMMQyib0CEBZF_xyNTsjxLFZX96",
     name: "Gaurav Jadhav",
     title: "Full-Stack Developer",
     bio: "I have expertise in full-stack web development, Android app development, and MERN stack development. I am knowledgeable in various programming languages, frameworks, and technologies and strive to create high-quality, user-friendly applications."
