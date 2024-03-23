@@ -11,7 +11,7 @@ import { GoogleOAuthProvider } from '@react-oauth/google';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <CookiesProvider>
-    <GoogleOAuthProvider clientId="640666833805-3qp4n12r3aak3e5mmbpu56alm224htlu.apps.googleusercontent.com">
+    <GoogleOAuthProvider clientId="746175344138-76lh6vo74535o8k56jss7en1ik06ghrc.apps.googleusercontent.com">
       <Provider store={store}>
         <PersistGate persistor={persistor}>
           <App />

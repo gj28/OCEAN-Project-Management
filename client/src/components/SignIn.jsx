@@ -376,6 +376,7 @@ const SignIn = ({ setSignInOpen, setSignUpOpen }) => {
         );
       });
 
+
       googleSignIn({
         name: user.data.name,
         email: user.data.email,
@@ -416,7 +417,10 @@ const SignIn = ({ setSignInOpen, setSignUpOpen }) => {
     },
   });
 
-
+  const fillTestCredentials = () => {
+    setEmail("monoke4309@shaflyn.com");
+    setPassword("Pass@123");
+  };
   return (
     <Modal open={true} onClose={() => setSignInOpen(false)}>
       <Container>
@@ -442,10 +446,20 @@ const SignIn = ({ setSignInOpen, setSignUpOpen }) => {
                   <CircularProgress color="inherit" size={20} />
                 ) : (
                   <>
-                    <GoogleIcon src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1000px-Google_%22G%22_Logo.svg.png?20210618182606" />
+                    <GoogleIcon src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png" />
                     Sign In with Google</>
                 )}
               </OutlinedBox>
+              
+              <OutlinedBox
+              
+                        button={true}
+                        activeButton={disabled}
+                         style={{ margin: "12px 24px 24px 24px" }} 
+                        onClick={fillTestCredentials}
+                                  >
+                      Fill Test Credentials
+                            </OutlinedBox>
               <Divider>
                 <Line />
                 or
